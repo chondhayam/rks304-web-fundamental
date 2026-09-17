@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Gyelgha Chondha</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-shell page-subpage">
+    <header class="topbar">
+      <div class="brand-mark" aria-hidden="true">GC</div>
+      <nav class="main-nav" aria-label="Navigasi utama">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="portfolio.html" class="nav-link">Portfolio</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+    </header>
+
+    <main class="content-stage contact-stage">
+      <section class="subpage-section contact-layout">
+        <div class="contact-info">
+          <div class="section-heading contact-heading">
+            <div class="section-heading-copy">
+              <span class="eyebrow">Hubungi</span>
+              <h2>Kontak &amp; Kolaborasi</h2>
+            </div>
+          </div>
+
+          <p>
+            Terbuka untuk diskusi seputar keamanan siber, kolaborasi proyek,
+            atau sekadar bertukar pikiran tentang jaringan dan blue team.
+            Silakan isi form di samping, saya akan membalas secepatnya.
+          </p>
+
+          <div class="badge-row">
+            <div class="info-item">
+              <span class="label">Email</span>
+              <span class="value">gchondha@gmail.com</span>
+            </div>
+            <div class="info-item">
+              <span class="label">Lokasi</span>
+              <span class="value">Batam, Indonesia</span>
+            </div>
+            <div class="info-item">
+              <span class="label">Response time</span>
+              <span class="value">1–2 hari kerja</span>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" action="#" method="post">
+          <div class="form-field">
+            <label for="fullname">Nama Lengkap</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Nama sesuai KTP/KTM" required />
+          </div>
+
+          <div class="form-field">
+            <label for="email">Alamat Email</label>
+            <input type="email" id="email" name="email" placeholder="nama@email.com" required />
+          </div>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="category">Kategori / Keperluan</label>
+              <select id="category" name="category" required>
+                <option value="" disabled selected>Pilih kategori</option>
+                <option value="konsultasi">Konsultasi</option>
+                <option value="kolaborasi">Kolaborasi Proyek</option>
+                <option value="pertanyaan-umum">Pertanyaan Umum</option>
+              </select>
+            </div>
+
+            <div class="form-field">
+              <label for="phone">Nomor WhatsApp (opsional)</label>
+              <input type="tel" id="phone" name="phone" placeholder="08xx-xxxx-xxxx" />
+            </div>
+          </div>
+
+          <fieldset>
+            <legend>Preferensi Balasan</legend>
+            <div class="radio-option">
+              <input type="radio" id="reply-email" name="reply-method" value="email" checked />
+              <label for="reply-email">Email</label>
+            </div>
+            <div class="radio-option">
+              <input type="radio" id="reply-whatsapp" name="reply-method" value="whatsapp" />
+              <label for="reply-whatsapp">WhatsApp</label>
+            </div>
+          </fieldset>
+
+          <div class="form-field">
+            <label for="message">Pesan</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tulis pesan atau kebutuhan kolaborasi kamu di sini..." required></textarea>
+            <span class="hint">Jelaskan singkat tujuan kamu menghubungi saya.</span>
+          </div>
+
+          <button type="submit">Kirim Pesan</button>
+          <p class="form-status">Form ini masih statis (belum terhubung ke backend/server).</p>
+        </form>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
