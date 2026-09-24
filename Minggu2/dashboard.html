@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - Admin Template</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-100 min-h-screen flex flex-col text-slate-800">
+
+  <header class="bg-gradient-to-r from-indigo-700 to-violet-600 text-white shadow-lg">
+    <div class="flex items-center justify-between px-6 py-4">
+      <div>
+        <p class="text-xs uppercase tracking-[0.25em] text-indigo-100">Control Panel</p>
+        <h1 class="text-xl font-bold">Admin Panel</h1>
+      </div>
+      <span class="rounded-full bg-white/10 px-3 py-1 text-sm font-medium backdrop-blur-sm">Halo, Admin</span>
+    </div>
+  </header>
+
+  <div class="flex flex-1">
+    <nav class="w-64 bg-slate-900 text-slate-200 p-4 flex flex-col gap-2">
+      <a href="dashboard.html" class="rounded-xl bg-indigo-700 px-3 py-2.5 font-medium text-white">Dashboard</a>
+      <a href="products.html" class="rounded-xl px-3 py-2.5 font-medium transition hover:bg-indigo-700 hover:text-white">Products</a>
+      <a href="#" class="rounded-xl px-3 py-2.5 font-medium transition hover:bg-indigo-700 hover:text-white">Users</a>
+      <a href="#" class="rounded-xl px-3 py-2.5 font-medium transition hover:bg-indigo-700 hover:text-white">Setting</a>
+      <a href="index.html" class="mt-auto rounded-xl bg-red-600 px-3 py-2.5 text-center font-medium text-white transition hover:bg-red-700">Logout</a>
+    </nav>
+
+    <main class="flex-1 p-6">
+      <div class="mb-6 flex items-center justify-between">
+        <div>
+          <p class="text-xs font-semibold uppercase tracking-[0.25em] text-indigo-500">Summary</p>
+          <h2 class="mt-2 text-3xl font-bold text-slate-800">Dashboard</h2>
+        </div>
+        <span class="rounded-full bg-emerald-100 px-3 py-1 text-sm font-medium text-emerald-700">+12.5% bulan ini</span>
+      </div>
+
+      <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-4">
+        <div class="rounded-2xl border-l-4 border-indigo-600 bg-white p-5 shadow-sm">
+          <div class="flex items-center justify-between">
+            <p class="text-sm text-slate-500">Total Penjualan</p>
+            <span class="text-xl">📈</span>
+          </div>
+          <p class="mt-4 text-3xl font-bold text-slate-800">Rp 24.500.000</p>
+          <p class="mt-2 text-sm text-emerald-600">+8.2% dari minggu lalu</p>
+        </div>
+
+        <div class="rounded-2xl border-l-4 border-emerald-500 bg-white p-5 shadow-sm">
+          <div class="flex items-center justify-between">
+            <p class="text-sm text-slate-500">Total Pesanan</p>
+            <span class="text-xl">🛒</span>
+          </div>
+          <p class="mt-4 text-3xl font-bold text-slate-800">1.284</p>
+          <p class="mt-2 text-sm text-emerald-600">+145 pesanan</p>
+        </div>
+
+        <div class="rounded-2xl border-l-4 border-yellow-400 bg-white p-5 shadow-sm">
+          <div class="flex items-center justify-between">
+            <p class="text-sm text-slate-500">Produk Aktif</p>
+            <span class="text-xl">📦</span>
+          </div>
+          <p class="mt-4 text-3xl font-bold text-slate-800">87</p>
+          <p class="mt-2 text-sm text-amber-600">+6 produk baru</p>
+        </div>
+
+        <div class="rounded-2xl border-l-4 border-pink-500 bg-white p-5 shadow-sm">
+          <div class="flex items-center justify-between">
+            <p class="text-sm text-slate-500">Pelanggan Baru</p>
+            <span class="text-xl">👥</span>
+          </div>
+          <p class="mt-4 text-3xl font-bold text-slate-800">56</p>
+          <p class="mt-2 text-sm text-pink-600">+18% dari bulan lalu</p>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <footer class="bg-slate-900 py-3 text-center text-sm text-slate-300">
+    &copy; 2026 Admin Template. All rights reserved.
+  </footer>
+
+</body>
+</html>

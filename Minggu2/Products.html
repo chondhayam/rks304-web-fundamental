@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products - Admin Template</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-100 min-h-screen flex flex-col text-slate-800">
+
+  <header class="bg-gradient-to-r from-indigo-700 to-violet-600 text-white shadow-lg">
+    <div class="flex items-center justify-between px-6 py-4">
+      <div>
+        <p class="text-xs uppercase tracking-[0.25em] text-indigo-100">Control Panel</p>
+        <h1 class="text-xl font-bold">Admin Panel</h1>
+      </div>
+      <span class="rounded-full bg-white/10 px-3 py-1 text-sm font-medium backdrop-blur-sm">Halo, Admin</span>
+    </div>
+  </header>
+
+  <div class="flex flex-1">
+    <nav class="w-64 bg-slate-900 text-slate-200 p-4 flex flex-col gap-2">
+      <a href="dashboard.html" class="rounded-xl px-3 py-2.5 font-medium transition hover:bg-indigo-700 hover:text-white">Dashboard</a>
+      <a href="products.html" class="rounded-xl bg-indigo-700 px-3 py-2.5 font-medium text-white">Products</a>
+      <a href="#" class="rounded-xl px-3 py-2.5 font-medium transition hover:bg-indigo-700 hover:text-white">Users</a>
+      <a href="#" class="rounded-xl px-3 py-2.5 font-medium transition hover:bg-indigo-700 hover:text-white">Setting</a>
+      <a href="index.html" class="mt-auto rounded-xl bg-red-600 px-3 py-2.5 text-center font-medium text-white transition hover:bg-red-700">Logout</a>
+    </nav>
+
+    <main class="flex-1 p-6">
+      <div class="mb-6 flex items-center justify-between">
+        <div>
+          <p class="text-xs font-semibold uppercase tracking-[0.25em] text-indigo-500">Catalog</p>
+          <h2 class="mt-2 text-3xl font-bold text-slate-800">Manajemen Produk</h2>
+        </div>
+        <a href="add-produk.html"
+          class="rounded-xl bg-indigo-700 px-4 py-2.5 font-medium text-white shadow-lg shadow-indigo-500/20 transition hover:bg-indigo-800">
+          + Add Product
+        </a>
+      </div>
+
+      <div class="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+        <table class="w-full text-left">
+          <thead class="bg-indigo-100 text-slate-700">
+            <tr>
+              <th class="px-4 py-3 font-semibold">No</th>
+              <th class="px-4 py-3 font-semibold">Name</th>
+              <th class="px-4 py-3 font-semibold">Stock</th>
+              <th class="px-4 py-3 font-semibold">Action</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-200">
+            <tr class="hover:bg-slate-50">
+              <td class="px-4 py-3">1</td>
+              <td class="px-4 py-3 font-medium text-slate-800">Kaos Polos Hitam</td>
+              <td class="px-4 py-3">120</td>
+              <td class="px-4 py-3">
+                <div class="flex items-center gap-3">
+                  <a href="edit-produk.html" class="rounded-md bg-blue-100 px-3 py-1.5 text-sm font-medium text-blue-700 transition hover:bg-blue-200">Edit</a>
+                  <button class="rounded-md bg-red-100 px-3 py-1.5 text-sm font-medium text-red-700 transition hover:bg-red-200">Delete</button>
+                </div>
+              </td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+              <td class="px-4 py-3">2</td>
+              <td class="px-4 py-3 font-medium text-slate-800">Celana Jeans</td>
+              <td class="px-4 py-3">45</td>
+              <td class="px-4 py-3">
+                <div class="flex items-center gap-3">
+                  <a href="edit-produk.html" class="rounded-md bg-blue-100 px-3 py-1.5 text-sm font-medium text-blue-700 transition hover:bg-blue-200">Edit</a>
+                  <button class="rounded-md bg-red-100 px-3 py-1.5 text-sm font-medium text-red-700 transition hover:bg-red-200">Delete</button>
+                </div>
+              </td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+              <td class="px-4 py-3">3</td>
+              <td class="px-4 py-3 font-medium text-slate-800">Sepatu Sneakers</td>
+              <td class="px-4 py-3">30</td>
+              <td class="px-4 py-3">
+                <div class="flex items-center gap-3">
+                  <a href="edit-produk.html" class="rounded-md bg-blue-100 px-3 py-1.5 text-sm font-medium text-blue-700 transition hover:bg-blue-200">Edit</a>
+                  <button class="rounded-md bg-red-100 px-3 py-1.5 text-sm font-medium text-red-700 transition hover:bg-red-200">Delete</button>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </div>
+
+  <footer class="bg-slate-900 py-3 text-center text-sm text-slate-300">
+    &copy; 2026 Admin Template. All rights reserved.
+  </footer>
+
+</body>
+</html>
